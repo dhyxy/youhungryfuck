@@ -6,26 +6,24 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #2a372d;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    background-color: #1a1a1a;
     min-height: 100vh;
 }
 
 .container {
     display: flex;
-    width: 100%;
-    height: 100vh;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .promo-content {
-    width: 50%;
-    padding: 4rem;
+    width: 100%;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
+    min-height: 60vh;
 }
 
 .logo {
@@ -33,37 +31,37 @@ body {
 }
 
 .uber-eats-logo {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
 .offer {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     margin-bottom: 1rem;
     line-height: 1.2;
 }
 
 .subtitle {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     opacity: 0.9;
 }
 
 .promo-code {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .terms {
-    font-size: 1rem;
+    font-size: 0.875rem;
     opacity: 0.7;
 }
 
 .image-container {
-    width: 50%;
-    height: 100vh;
+    width: 100%;
+    height: 40vh;
     overflow: hidden;
 }
 
@@ -72,6 +70,39 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .promo-content {
+        width: 50%;
+        padding: 4rem;
+        min-height: 100vh;
+    }
+
+    .image-container {
+        width: 50%;
+        height: 100vh;
+    }
+
+    .offer {
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        font-size: 1.8rem;
+    }
+
+    .promo-code {
+        font-size: 3.5rem;
+    }
+
+    .uber-eats-logo {
+        width: 200px;
+    }
 }
 
 @media (max-width: 1024px) {
